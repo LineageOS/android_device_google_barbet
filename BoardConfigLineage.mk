@@ -8,3 +8,5 @@
 BOOT_KERNEL_MODULES += ftm5.ko
 
 include device/google/redbull/BoardConfigLineage.mk
+
+include vendor/google/barbet/BoardConfigVendor.mk
