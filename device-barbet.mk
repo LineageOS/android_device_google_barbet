@@ -93,10 +93,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/tas2562/TAS_FactoryApp:$(TARGET_COPY_OUT_VENDOR)/bin/TAS_FactoryApp
 endif
 
-ifeq ($(wildcard vendor/google_devices/barbet/proprietary/device-vendor-barbet.mk),)
-    BUILD_WITHOUT_VENDOR := true
-endif
-
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.barbet
 
