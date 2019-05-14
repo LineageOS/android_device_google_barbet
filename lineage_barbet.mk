@@ -26,3 +26,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="barbet-user 12 SP1A.211105.003 7757856 release-keys"
 
 BUILD_FINGERPRINT := google/barbet/barbet:12/SP1A.211105.003/7757856:user/release-keys
+
+$(call inherit-product, vendor/google/barbet/barbet-vendor.mk)
