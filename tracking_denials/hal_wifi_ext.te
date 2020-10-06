@@ -1,2 +1,0 @@
-# b/170190081
-dontaudit hal_wifi_ext debugfs_wlan:dir search ;

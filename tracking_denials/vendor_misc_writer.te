@@ -1,4 +1,0 @@
-# b/170189742
-dontaudit vendor_misc_writer proc_cmdline:file open ;
-dontaudit vendor_misc_writer gsi_metadata_file:dir search ;
-dontaudit vendor_misc_writer proc_cmdline:file getattr ;
