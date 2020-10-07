@@ -1,0 +1,14 @@
+# b/170189925
+dontaudit pixelstats_vendor pixelstats_vendor:netlink_kobject_uevent_socket read ;
+dontaudit pixelstats_vendor chre_socket:sock_file write ;
+dontaudit pixelstats_vendor hwservicemanager_prop:file getattr ;
+dontaudit pixelstats_vendor chre:unix_stream_socket connectto ;
+dontaudit pixelstats_vendor sysfs_batteryinfo:dir search ;
+dontaudit pixelstats_vendor pixelstats_vendor:netlink_kobject_uevent_socket bind ;
+dontaudit pixelstats_vendor pixelstats_vendor:netlink_kobject_uevent_socket getopt ;
+dontaudit pixelstats_vendor pixelstats_vendor:netlink_kobject_uevent_socket setopt ;
+dontaudit pixelstats_vendor pixelstats_vendor:netlink_kobject_uevent_socket create ;
+dontaudit pixelstats_vendor hwservicemanager_prop:file map ;
+dontaudit pixelstats_vendor hwservicemanager:binder call ;
+dontaudit pixelstats_vendor hwservicemanager_prop:file read ;
+dontaudit pixelstats_vendor hwservicemanager_prop:file open ;
