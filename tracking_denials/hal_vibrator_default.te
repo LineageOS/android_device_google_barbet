@@ -1,0 +1,5 @@
+# b/170189923
+dontaudit hal_vibrator_default default_prop:file map ;
+dontaudit hal_vibrator_default default_prop:file open ;
+dontaudit hal_vibrator_default default_prop:file read ;
+dontaudit hal_vibrator_default default_prop:file getattr ;
