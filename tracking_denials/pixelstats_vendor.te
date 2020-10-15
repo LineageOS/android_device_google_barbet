@@ -12,3 +12,9 @@ dontaudit pixelstats_vendor hwservicemanager_prop:file map ;
 dontaudit pixelstats_vendor hwservicemanager:binder call ;
 dontaudit pixelstats_vendor hwservicemanager_prop:file read ;
 dontaudit pixelstats_vendor hwservicemanager_prop:file open ;
+
+userdebug_or_eng(`
+  permissive pixelstats_vendor;
+  allow hwservicemanager pixelstats_vendor:binder transfer;
+')
+
