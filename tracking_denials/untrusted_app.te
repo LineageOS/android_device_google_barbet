@@ -1,4 +1,0 @@
-# b/170266998
-dontaudit google_camera_app selinuxfs:file read ;
-dontaudit google_camera_app selinuxfs:file open ;
-dontaudit untrusted_app_29 hal_qspmhal_default:binder call ;
