@@ -1,5 +1,5 @@
 # haptics
-ro.vibrator.hal.   u:object_r:vendor_vibrator_prop:s0
+ro.vendor.vibrator.hal.   u:object_r:vendor_vibrator_prop:s0
 
 # audio TAS amp
 tas.smartpa.debug.disable       u:object_r:vendor_audio_prop:s0
