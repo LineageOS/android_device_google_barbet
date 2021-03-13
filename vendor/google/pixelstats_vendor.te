@@ -25,3 +25,5 @@ allow pixelstats_vendor sysfs_wlc:dir search;
 # OrientationCollector
 allow pixelstats_vendor fwk_sensor_hwservice:hwservice_manager find;
 binder_call(pixelstats_vendor, system_server)
+binder_use(pixelstats_vendor)
+allow pixelstats_vendor fwk_stats_service:service_manager find;
