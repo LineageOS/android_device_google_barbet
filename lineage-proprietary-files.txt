@@ -164,6 +164,7 @@ product/etc/sysconfig/pixel_experience_2019_midyear.xml
 product/etc/sysconfig/pixel_experience_2019.xml
 product/etc/sysconfig/pixel_experience_2020_midyear.xml
 product/etc/sysconfig/pixel_experience_2020.xml
+product/etc/sysconfig/pixel_experience_2021_midyear.xml
 product/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml
 -product/framework/libhwinfo.jar
 product/lib/libdmengine.so
