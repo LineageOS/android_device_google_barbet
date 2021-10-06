@@ -34,6 +34,6 @@ TARGET_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=barbet \
-    PRIVATE_BUILD_DESC="barbet-user 11 RD2A.210905.002 7513089 release-keys"
+    PRIVATE_BUILD_DESC="barbet-user 11 RD2A.211001.002 7644766 release-keys"
 
-BUILD_FINGERPRINT := google/barbet/barbet:11/RD2A.210905.002/7513089:user/release-keys
+BUILD_FINGERPRINT := google/barbet/barbet:11/RD2A.211001.002/7644766:user/release-keys
