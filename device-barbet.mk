@@ -25,7 +25,7 @@ include device/google/redbull/device-common.mk
 
 # Increment the SVN for any official public releases
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.svn=3
+    ro.vendor.build.svn=6
 
 # Enable watchdog timeout loop breaker.
 PRODUCT_PROPERTY_OVERRIDES += \
