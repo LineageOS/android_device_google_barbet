@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eec232c1_65028e4c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2022-01-09T20:48:07Z",
+      "side": 1,
+      "message": "works, maybe one day there is a better way to avoid the build warnings, but...",
+      "revId": "d4d67689862e2aaa232d32ac5718a8d256a22bdb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
