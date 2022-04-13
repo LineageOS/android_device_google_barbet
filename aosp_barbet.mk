@@ -46,9 +46,6 @@ $(call inherit-product, device/google/barbet/device-barbet.mk)
 $(call inherit-product-if-exists, vendor/google_devices/barbet/proprietary/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/barbet/prebuilts/device-vendor-barbet.mk)
 
-# Don't build super.img.
-PRODUCT_BUILD_SUPER_PARTITION := false
-
 # b/113232673 STOPSHIP deal with Qualcomm stuff later
 # PRODUCT_RESTRICT_VENDOR_FILES := all
 
