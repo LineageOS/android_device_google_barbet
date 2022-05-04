@@ -5,3 +5,7 @@
 #
 
 $(call inherit-product, device/google/redbull/device-lineage.mk)
+
+# HBM
+PRODUCT_PACKAGES += \
+    HbmSVManagerOverlay
