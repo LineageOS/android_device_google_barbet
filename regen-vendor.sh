@@ -286,6 +286,7 @@ VENDOR_SKIP_FILES=(
     "etc/bluetooth_power_limits_JP.csv"
     "etc/bluetooth_power_limits_US.csv"
     "etc/crus_sp_cal_mixer_paths.xml"
+    "etc/default-permissions/default-permissions_talkback.xml"
     "etc/default_volume_tables.xml"
     "etc/fs_config_dirs"
     "etc/fs_config_files"
