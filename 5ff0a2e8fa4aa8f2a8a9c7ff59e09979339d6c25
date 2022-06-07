@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a30d71ba_0eeeb57a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2022-06-07T04:14:02Z",
+      "side": 1,
+      "message": "https://github.com/CalyxOS/platform_frameworks_base/commit/df8300727f008c0b5ccafe604331668a2b60d6f7\n\nDo we have to re-adjust it?",
+      "revId": "5ff0a2e8fa4aa8f2a8a9c7ff59e09979339d6c25",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
