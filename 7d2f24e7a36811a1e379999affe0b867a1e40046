@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77740ad3_335a59bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2022-09-02T15:11:23Z",
+      "side": 1,
+      "message": "I mean, this is fine...but I\u0027m not sure we need this: https://gitlab.com/MindTheGapps/vendor_gapps/-/blob/tau/proprietary-files-common.txt#L13",
+      "revId": "7d2f24e7a36811a1e379999affe0b867a1e40046",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
