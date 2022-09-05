@@ -1,6 +1,2 @@
 dumpstate incident process b/238571134
 hal_drm_widevine default_prop file b/238263941
-init app_data_file dir b/241049528
-init gsi_data_file file b/241049528
-init privapp_data_file dir b/241049528
-init system_app_data_file dir b/241049528
