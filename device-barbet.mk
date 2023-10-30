@@ -44,9 +44,6 @@ PRODUCT_SOONG_NAMESPACES += \
     device/google/barbet \
     hardware/qcom/wlan/legacy
 
-PRODUCT_PACKAGES += \
-    libtasspkrprot
-
 # Audio XMLs for barbet
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_bolero_snd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_bolero_snd.xml \
@@ -140,9 +137,6 @@ PRODUCT_COPY_FILES += \
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.recovery.device.rc:recovery/root/init.recovery.barbet.rc
-
-PRODUCT_PACKAGES += \
-    sensors.$(PRODUCT_HARDWARE) \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/powerhint_$(PRODUCT_HARDWARE).json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_$(PRODUCT_HARDWARE).json
