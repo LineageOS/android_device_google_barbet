@@ -11,9 +11,6 @@ product/etc/ambient/matcher_tah.leveldb
 product/etc/firmware/music_detector.descriptor
 product/etc/firmware/music_detector.sound_model
 
-# Camera extensions
-product/app/PixelCameraServicesBarbet/PixelCameraServicesBarbet.apk;PRESIGNED
-
 # Felica
 product/etc/felica/common.cfg
 product/etc/felica/mfm.cfg
