@@ -1,4 +1,5 @@
 # All blobs are extracted from Google factory images for each new ASB
+vendor/apex/com.google.pixel.euicc.update.apex
 vendor/app/CACertService/CACertService.apk
 vendor/app/CneApp/CneApp.apk
 vendor/app/IWlanService/IWlanService.apk
