@@ -224,3 +224,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     NfcOverlayBarbet
+
+# Gyotaku
+include device/google/gs-common/gyotaku_app/gyotaku.mk
