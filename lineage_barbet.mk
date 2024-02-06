@@ -25,8 +25,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=barbet \
-    PRIVATE_BUILD_DESC="barbet-user 14 UQ1A.240105.002 11129216 release-keys"
+    PRIVATE_BUILD_DESC="barbet-user 14 UQ1A.240205.002 11224170 release-keys"
 
-BUILD_FINGERPRINT := google/barbet/barbet:14/UQ1A.240105.002/11129216:user/release-keys
+BUILD_FINGERPRINT := google/barbet/barbet:14/UQ1A.240205.002/11224170:user/release-keys
 
 $(call inherit-product, vendor/google/barbet/barbet-vendor.mk)
