@@ -24,6 +24,9 @@ include device/google/redbull/BoardConfig-common.mk
 # Allow LZ4 compression
 BOARD_RAMDISK_USE_LZ4 := true
 
+RELEASE_GOOGLE_PRODUCT_RADIO_DIR := $(RELEASE_GOOGLE_BARBET_RADIO_DIR)
+RELEASE_GOOGLE_PRODUCT_BOOTLOADER_DIR := $(RELEASE_GOOGLE_BARBET_BOOTLOADER_DIR)
+
 # Testing related defines
 #BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/b9-setup.sh
 
