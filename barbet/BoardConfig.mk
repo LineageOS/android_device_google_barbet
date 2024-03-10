@@ -24,6 +24,9 @@ include device/google/redbull/BoardConfig-common.mk
 # Allow LZ4 compression
 BOARD_RAMDISK_USE_LZ4 := true
 
+RELEASE_GOOGLE_PRODUCT_RADIO_DIR := $(RELEASE_GOOGLE_BARBET_RADIO_DIR)
+RELEASE_GOOGLE_PRODUCT_BOOTLOADER_DIR := $(RELEASE_GOOGLE_BARBET_BOOTLOADER_DIR)
+
 # Testing related defines
 #BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/b9-setup.sh
 
@@ -36,5 +39,9 @@ AUDIO_FEATURE_CONFIG_ENABLE_TAS_SET_RE_IN_HAL := true
 -include vendor/google_devices/barbet/proprietary/BoardConfigVendor.mk
 
 -include device/google/barbet/soong/pixel_soong_config.mk
+
+# TODO: Remove this. The qcom makefiles build files to the partition staging directories in a way
+# that isn't tracked by the build system, and causes incrementality bugs.
+BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 include device/google/barbet/BoardConfigLineage.mk
