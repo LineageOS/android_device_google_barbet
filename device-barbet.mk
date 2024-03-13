@@ -227,3 +227,5 @@ PRODUCT_PACKAGES += \
 
 # Gyotaku
 include device/google/gs-common/gyotaku_app/gyotaku.mk
+# Better Bug
+include device/google/gs-common/betterbug/betterbug.mk
