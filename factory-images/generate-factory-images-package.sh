@@ -22,4 +22,5 @@ VERSION=RD2A.201106.001
 SRCPREFIX=signed-
 BOOTLOADER=b9-0.4-6939415
 RADIO=g7250-00017-201029-B-6939687
+GSCFIRMWARESRC=citadel
 source ../../../common/generate-factory-images-common.sh
