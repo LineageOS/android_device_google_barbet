@@ -231,3 +231,6 @@ PRODUCT_PACKAGES += \
 include device/google/gs-common/gyotaku_app/gyotaku.mk
 # Better Bug
 include device/google/gs-common/betterbug/betterbug.mk
+
+# Set soong config variable to control module build
+$(call soong_config_set,ctpm,enable_nr_dual_connectivity_qcril,true)
