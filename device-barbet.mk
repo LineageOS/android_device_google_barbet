@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 
 # Increment the SVN for any official public releases
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.svn=58
+    ro.vendor.build.svn=60
 
 # Enable watchdog timeout loop breaker.
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -202,3 +202,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     NfcOverlayBarbet
+
+# Gyotaku
+include device/google/gs-common/gyotaku_app/gyotaku.mk
