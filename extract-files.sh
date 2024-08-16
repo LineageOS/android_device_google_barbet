@@ -126,6 +126,9 @@ if [ -z "${ONLY_FIRMWARE}" ]; then
     set_as_module "vendor/lib64/libMpeg4SwEncoder.so" "${VENDOR_TXT}"
     set_as_module "vendor/lib64/libthermalclient.so" "${VENDOR_TXT}"
 
+    set_module "vendor/lib/vendor.qti.imsrtpservice@3.0.so" "vendor.qti.imsrtpservice@3.0-vendor" "${VENDOR_TXT}"
+    set_module "vendor/lib64/vendor.qti.imsrtpservice@3.0.so" "vendor.qti.imsrtpservice@3.0-vendor" "${VENDOR_TXT}"
+
     extract "${MY_DIR}/proprietary-files-vendor.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
