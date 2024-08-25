@@ -126,6 +126,17 @@ if [ -z "${ONLY_FIRMWARE}" ]; then
     set_as_module "vendor/lib64/libMpeg4SwEncoder.so" "${VENDOR_TXT}"
     set_as_module "vendor/lib64/libthermalclient.so" "${VENDOR_TXT}"
 
+    # 32bit libmmcamera_faceproc is unable to resolved the following symbols:
+    # __aeabi_memcpy@LIBC_PRIVATE, __aeabi_memset@LIBC_PRIVATE, __gnu_Unwind_Find_exidx@LIBC_PRIVATE
+    # lowi-server, libcne, libwqe depend on libwpa_client, which is a gnu makefile target
+    set_disable_checkelf "vendor/bin/lowi-server" "${VENDOR_TXT}"
+    set_disable_checkelf "vendor/lib/libcne.so" "${VENDOR_TXT}"
+    set_disable_checkelf "vendor/lib/libmmcamera_faceproc.so" "${VENDOR_TXT}"
+    set_disable_checkelf "vendor/lib/libwqe.so" "${VENDOR_TXT}"
+    set_disable_checkelf "vendor/lib64/libcne.so" "${VENDOR_TXT}"
+    set_disable_checkelf "vendor/lib64/libmmcamera_faceproc.so" "${VENDOR_TXT}"
+    set_disable_checkelf "vendor/lib64/libwqe.so" "${VENDOR_TXT}"
+
     set_module "vendor/lib/vendor.qti.hardware.tui_comm@1.0.so" "vendor.qti.hardware.tui_comm@1.0-vendor" "${VENDOR_TXT}"
     set_module "vendor/lib/vendor.qti.imsrtpservice@3.0.so" "vendor.qti.imsrtpservice@3.0-vendor" "${VENDOR_TXT}"
     set_module "vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so" "vendor.qti.hardware.tui_comm@1.0-vendor" "${VENDOR_TXT}"
