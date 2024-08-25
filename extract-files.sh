@@ -118,14 +118,6 @@ if [ -z "${ONLY_FIRMWARE}" ]; then
     set_symlink "vendor/lib64/egl/libGLESv2_adreno.so" "vendor/lib64/libGLESv2_adreno.so" "${VENDOR_TXT}"
     set_symlink "vendor/lib64/egl/libq3dtools_adreno.so" "vendor/lib64/libq3dtools_adreno.so" "${VENDOR_TXT}"
 
-    set_as_module "vendor/lib/libadsprpc.so" "${VENDOR_TXT}"
-    set_as_module "vendor/lib/libfastcvopt.so" "${VENDOR_TXT}"
-    set_as_module "vendor/lib/libMpeg4SwEncoder.so" "${VENDOR_TXT}"
-    set_as_module "vendor/lib64/libadsprpc.so" "${VENDOR_TXT}"
-    set_as_module "vendor/lib64/libfastcvopt.so" "${VENDOR_TXT}"
-    set_as_module "vendor/lib64/libMpeg4SwEncoder.so" "${VENDOR_TXT}"
-    set_as_module "vendor/lib64/libthermalclient.so" "${VENDOR_TXT}"
-
     # lowi-server, libcne, libwqe depend on libwpa_client, which is a gnu makefile target
     # libmmcamera_faceproc.so: error: Unresolved symbol: __aeabi_memcpy@LIBC_PRIVATE
     # libmmcamera_faceproc.so: error: Unresolved symbol: __aeabi_memset@LIBC_PRIVATE
