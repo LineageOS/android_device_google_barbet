@@ -6,6 +6,10 @@
 
 $(call inherit-product, device/google/redbull/device-lineage.mk)
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.7-service-google
+
 # Codec2
 PRODUCT_PACKAGES += \
     libmedia_ecoservice.vendor
