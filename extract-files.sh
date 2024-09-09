@@ -129,10 +129,10 @@ if [ -z "${ONLY_FIRMWARE}" ]; then
     set_disable_checkelf "vendor/lib64/libmmcamera_faceproc.so" "${VENDOR_TXT}"
     set_disable_checkelf "vendor/lib64/libwqe.so" "${VENDOR_TXT}"
 
-    set_module "vendor/lib/vendor.qti.hardware.tui_comm@1.0.so" "vendor.qti.hardware.tui_comm@1.0-vendor" "${VENDOR_TXT}"
-    set_module "vendor/lib/vendor.qti.imsrtpservice@3.0.so" "vendor.qti.imsrtpservice@3.0-vendor" "${VENDOR_TXT}"
-    set_module "vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so" "vendor.qti.hardware.tui_comm@1.0-vendor" "${VENDOR_TXT}"
-    set_module "vendor/lib64/vendor.qti.imsrtpservice@3.0.so" "vendor.qti.imsrtpservice@3.0-vendor" "${VENDOR_TXT}"
+    set_module_suffix "vendor/lib/vendor.qti.hardware.tui_comm@1.0.so" "-vendor" "${VENDOR_TXT}"
+    set_module_suffix "vendor/lib/vendor.qti.imsrtpservice@3.0.so" "-vendor" "${VENDOR_TXT}"
+    set_module_suffix "vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so" "-vendor" "${VENDOR_TXT}"
+    set_module_suffix "vendor/lib64/vendor.qti.imsrtpservice@3.0.so" "-vendor" "${VENDOR_TXT}"
 
     extract "${MY_DIR}/proprietary-files-vendor.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
