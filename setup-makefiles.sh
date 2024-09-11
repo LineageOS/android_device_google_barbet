@@ -28,8 +28,6 @@ source "${HELPER}"
 function vendor_imports() {
     cat <<EOF >>"$1"
 		"device/google/barbet",
-		"hardware/google/av",
-		"hardware/google/camera",
 		"hardware/google/interfaces",
 		"hardware/google/pixel",
 		"hardware/qcom/sm7250/display",

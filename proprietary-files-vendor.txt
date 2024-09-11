@@ -24,6 +24,7 @@ vendor/bin/hvdcp_opti
 vendor/bin/hw/android.hardware.authsecret-service.citadel
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.2-service.fpc
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+vendor/bin/hw/android.hardware.camera.provider@2.7-service-google
 vendor/bin/hw/android.hardware.confirmationui@1.0-service-google
 vendor/bin/hw/android.hardware.drm-service.widevine-v17
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -280,6 +281,7 @@ vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/android.hardware.authsecret-service.citadel.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.2-service.fpc.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/etc/init/android.hardware.camera.provider@2.7-service-google.rc
 vendor/etc/init/android.hardware.confirmationui@1.0-service-google.rc
 vendor/etc/init/android.hardware.drm-service.widevine-v17.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
@@ -413,6 +415,7 @@ vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 vendor/etc/twoshay_config.json
 vendor/etc/vintf/manifest/android.hardware.authsecret-service.citadel.xml
+vendor/etc/vintf/manifest/android.hardware.camera.provider@2.7-service-google.xml
 vendor/etc/vintf/manifest/android.hardware.confirmationui@1.0-service-google.xml
 vendor/etc/vintf/manifest/android.hardware.identity.strongbox.xml
 vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service.citadel.xml
@@ -780,6 +783,7 @@ vendor/lib/libmaxxaudio.so
 vendor/lib/libmaxxaudioqdsp.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libmdsprpc.so
+vendor/lib/libmedia_ecoservice.so
 vendor/lib/libminkdescriptor.so
 vendor/lib/libminksocket.so
 vendor/lib/libmm-color-convertor.so
@@ -1210,6 +1214,8 @@ vendor/lib64/libVkLayer_q3dtools.so
 vendor/lib64/lib_aion_buffer.so
 vendor/lib64/lib_goog_chi_node_utils.so
 vendor/lib64/lib_goog_metadata_utils.so
+vendor/lib64/lib_profiler.so
+vendor/lib64/lib_sensor_listener.so
 vendor/lib64/liba2dpoffload.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
@@ -1318,6 +1324,8 @@ vendor/lib64/libgooglecamera.proto_message.converter.gabc.so
 vendor/lib64/libgooglecamera.proto_message.converter.ghawb.so
 vendor/lib64/libgooglecamera.proto_message.converter.so
 vendor/lib64/libgooglecamera.proto_message.protos.so
+vendor/lib64/libgooglecamerahal.so
+vendor/lib64/libgooglecamerahalutils.so
 vendor/lib64/libgooglecamerahwl_impl.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
@@ -1350,6 +1358,7 @@ vendor/lib64/liblqe.so
 vendor/lib64/libmaxxaudio.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libmdsprpc.so
+vendor/lib64/libmedia_ecoservice.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket.so
 vendor/lib64/libmm-color-convertor.so
