@@ -14,6 +14,7 @@
 // limitations under the License.
 
 package {
+    default_team: "trendy_team_pixel_system_sw_touch_haptic",
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
@@ -22,9 +23,6 @@ cc_benchmark {
     defaults: ["VibratorHalDrv2624TestDefaultsBarbet"],
     srcs: [
         "benchmark.cpp",
-    ],
-    static_libs: [
-        "libc++fs",
     ],
     shared_libs: [
         "libbase",

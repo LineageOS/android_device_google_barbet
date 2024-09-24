@@ -14,6 +14,7 @@
 // limitations under the License.
 
 package {
+    default_team: "trendy_team_pixel_system_sw_touch_haptic",
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
@@ -26,7 +27,6 @@ cc_test {
         "test-vibrator.cpp",
     ],
     static_libs: [
-        "libc++fs",
         "libgmock",
     ],
     shared_libs: [
