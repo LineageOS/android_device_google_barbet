@@ -23,9 +23,8 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=barbet \
-    PRIVATE_BUILD_DESC="barbet-user 14 AP2A.240805.005 12025142 release-keys"
-
-BUILD_FINGERPRINT := google/barbet/barbet:14/AP2A.240805.005/12025142:user/release-keys
+    BuildDesc="barbet-user 14 AP2A.240805.005 12025142 release-keys" \
+    BuildFingerprint=google/barbet/barbet:14/AP2A.240805.005/12025142:user/release-keys \
+    DeviceProduct=barbet
 
 $(call inherit-product, vendor/google/barbet/barbet-vendor.mk)
