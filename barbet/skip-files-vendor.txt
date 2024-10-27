@@ -1579,6 +1579,20 @@ lib64/libpng.so
 lib64/libpower.so
 lib64/libsqlite.so
 
+# Odex
+app/CACertService/oat/arm64/CACertService.odex
+app/CACertService/oat/arm64/CACertService.vdex
+app/CneApp/oat/arm64/CneApp.odex
+app/CneApp/oat/arm64/CneApp.vdex
+app/IWlanService/oat/arm64/IWlanService.odex
+app/IWlanService/oat/arm64/IWlanService.vdex
+app/TimeService/oat/arm64/TimeService.odex
+app/TimeService/oat/arm64/TimeService.vdex
+framework/oat/arm/com.google.android.camera.experimental2020.odex
+framework/oat/arm/com.google.android.camera.experimental2020.vdex
+framework/oat/arm64/com.google.android.camera.experimental2020.odex
+framework/oat/arm64/com.google.android.camera.experimental2020.vdex
+
 # Completely skip files that are not required
 
 # Cryptfshw
