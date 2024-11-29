@@ -35,8 +35,6 @@ CLEAN_VENDOR=true
 ONLY_FIRMWARE=
 KANG=
 SECTION=
-CARRIER_SKIP_FILES=()
-VENDOR_SKIP_FILES=()
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
@@ -99,41 +97,7 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
 if [ -z "${ONLY_FIRMWARE}" ]; then
     extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
-
-    generate_prop_list_from_image "product.img" "${MY_DIR}/proprietary-files-carriersettings.txt" CARRIER_SKIP_FILES carriersettings
     extract "${MY_DIR}/proprietary-files-carriersettings.txt" "${SRC}" "${KANG}" --section "${SECTION}"
-
-    readarray -t VENDOR_SKIP_FILES < <(cat "${MY_DIR}/skip-files-vendor.txt" | sed -E "/^[[:blank:]]*(#|$)/d")
-    VENDOR_TXT="${MY_DIR}/proprietary-files-vendor.txt"
-    generate_prop_list_from_image "vendor.img" "${VENDOR_TXT}" VENDOR_SKIP_FILES
-
-    set_presigned "vendor/app/adreno_graphics_driver/adreno_graphics_driver.apk" "${VENDOR_TXT}"
-
-    set_required "vendor/app/CneApp/CneApp.apk" "CneApp.libvndfwk_detect_jni.qti_symlink" "${VENDOR_TXT}"
-
-    set_symlink "vendor/lib/egl/libEGL_adreno.so" "vendor/lib/libEGL_adreno.so" "${VENDOR_TXT}"
-    set_symlink "vendor/lib/egl/libGLESv2_adreno.so" "vendor/lib/libGLESv2_adreno.so" "${VENDOR_TXT}"
-    set_symlink "vendor/lib/egl/libq3dtools_adreno.so" "vendor/lib/libq3dtools_adreno.so" "${VENDOR_TXT}"
-    set_symlink "vendor/lib64/egl/libEGL_adreno.so" "vendor/lib64/libEGL_adreno.so" "${VENDOR_TXT}"
-    set_symlink "vendor/lib64/egl/libGLESv2_adreno.so" "vendor/lib64/libGLESv2_adreno.so" "${VENDOR_TXT}"
-    set_symlink "vendor/lib64/egl/libq3dtools_adreno.so" "vendor/lib64/libq3dtools_adreno.so" "${VENDOR_TXT}"
-
-    # 32bit libmmcamera_faceproc is unable to resolved the following symbols:
-    # __aeabi_memcpy@LIBC_PRIVATE, __aeabi_memset@LIBC_PRIVATE, __gnu_Unwind_Find_exidx@LIBC_PRIVATE
-    # lowi-server, libcne, libwqe depend on libwpa_client, which is a gnu makefile target
-    set_disable_checkelf "vendor/bin/lowi-server" "${VENDOR_TXT}"
-    set_disable_checkelf "vendor/lib/libcne.so" "${VENDOR_TXT}"
-    set_disable_checkelf "vendor/lib/libmmcamera_faceproc.so" "${VENDOR_TXT}"
-    set_disable_checkelf "vendor/lib/libwqe.so" "${VENDOR_TXT}"
-    set_disable_checkelf "vendor/lib64/libcne.so" "${VENDOR_TXT}"
-    set_disable_checkelf "vendor/lib64/libmmcamera_faceproc.so" "${VENDOR_TXT}"
-    set_disable_checkelf "vendor/lib64/libwqe.so" "${VENDOR_TXT}"
-
-    set_module_suffix "vendor/lib/vendor.qti.hardware.tui_comm@1.0.so" "-vendor" "${VENDOR_TXT}"
-    set_module_suffix "vendor/lib/vendor.qti.imsrtpservice@3.0.so" "-vendor" "${VENDOR_TXT}"
-    set_module_suffix "vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so" "-vendor" "${VENDOR_TXT}"
-    set_module_suffix "vendor/lib64/vendor.qti.imsrtpservice@3.0.so" "-vendor" "${VENDOR_TXT}"
-
     extract "${MY_DIR}/proprietary-files-vendor.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
