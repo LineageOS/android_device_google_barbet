@@ -43,8 +43,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 LOCAL_PATH := device/google/barbet
 
 PRODUCT_SOONG_NAMESPACES += \
-    device/google/barbet \
-    hardware/qcom/wlan/legacy
+    device/google/barbet
 
 # Audio XMLs for barbet
 PRODUCT_COPY_FILES += \
