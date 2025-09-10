@@ -204,8 +204,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NfcOverlayBarbet
 
-# Gyotaku
-include device/google/gs-common/gyotaku_app/gyotaku.mk
-
 # Set soong config variable to control module build
 $(call soong_config_set,ctpm,enable_nr_dual_connectivity_qcril,true)
