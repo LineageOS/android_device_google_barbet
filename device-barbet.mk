@@ -117,10 +117,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.quick_start.oem_id=00e0 \
     ro.quick_start.device_id=barbet
 
-# Dumpstate HAL
-PRODUCT_PACKAGES += \
-    android.hardware.dumpstate@1.1-service.barbet
-
 #per device
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/barbet/init.barbet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.barbet.rc
