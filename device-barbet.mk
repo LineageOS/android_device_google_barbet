@@ -81,12 +81,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/tas2562/TAS_FactoryApp:$(TARGET_COPY_OUT_VENDOR)/bin/TAS_FactoryApp
 endif
 
-# USB HAL
-PRODUCT_PACKAGES += \
-    android.hardware.usb-service.barbet
-PRODUCT_PACKAGES += \
-    android.hardware.usb.gadget-service.barbet
-
 # Vibrator HAL
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.barbet
