@@ -131,10 +131,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/thermal_info_config_$(PRODUCT_HARDWARE)_evt.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_$(PRODUCT_HARDWARE)_evt.json \
     $(LOCAL_PATH)/thermal_info_config_$(PRODUCT_HARDWARE).json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_$(PRODUCT_HARDWARE).json
 
-# Audio effects
-PRODUCT_PACKAGES += \
-    libqcomvoiceprocessingdescriptors
-
 # Fingerprint HIDL
 include device/google/barbet/fingerprint.mk
 
